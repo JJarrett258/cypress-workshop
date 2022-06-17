@@ -4,14 +4,6 @@ describe('Apprentice Bootcamp Cypress Tests', () => {
         cy.visit('http://127.0.0.1:8888')
     })
 
-    it('returns awful dad joke from given text', () => {
-        cy.get('.text-field-selector').type('why did the scarecrow win an award?')
-        cy.get('.awful-dad-joke-button').click()
-        cy.get('.text-field-selector').should('have.text', 'because he was outstanding in his field....')
-        cy.get('.awful-dad-joke-button').click()
-        cy.get('.text-field-selector').should('have.text', 'its a tough job but, hay, its in his jeans')
-    });
-
     it('adds five todos', () => {
         // Write a test that asserts you can add 5 todos
         // Hint: make sure to assert the length is equal to 5
